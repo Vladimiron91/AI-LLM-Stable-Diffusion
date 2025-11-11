@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 
 
 def setup_env():
-    """Загрузка токена HF"""
+    """Загрузка токена HF_TOKEN"""
     load_dotenv()
     hf_token = os.getenv("HF_TOKEN")
 
@@ -54,7 +54,7 @@ def save_image(image, filename):
 def main():
     token = setup_env()
 
-    # ✅ 3 ПРОМПТА: базовый, художественный, сложный (prompt-engineering)
+    #  3 ПРОМПТА:
     prompts = [
         # 1 — простой промпт
         "Beautiful sunset over a quiet lake, soft warm colors, realistic landscape",
